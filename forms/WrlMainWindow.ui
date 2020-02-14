@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>WrlMainWindow</class>
+  <widget class="QMainWindow" name="WrlMainWindow">
+    <property name="minimumSize">
+      <size>
+	<width>400</width>
+	<height>600</height>
+      </size>
+    </property>
+    <property name="windowTitle">
+      <string>ENGN2912B 2019 | WrlMainWindow1</string>
+    </property>
+
+    <widget class="QWidget" name="centralwidget">
+      <layout class="QHBoxLayout" name="centralwidgetQHBoxLayout">
+	<property name="leftMargin">
+	  <number>5</number>
+	</property>
+	<property name="topMargin">
+	  <number>5</number>
+	</property>
+	<property name="rightMargin">
+	  <number>5</number>
+	</property>
+	<property name="bottomMargin">
+	  <number>5</number>
+	</property>
+	<property name="spacing">
+	  <number>5</number>
+	</property>
+
+	<item>
+	  <widget class="WrlGLWidget" name="glWidget" native="true">
+	    <property name="sizePolicy">
+	      <sizepolicy hsizetype="MinimumExpanding" vsizetype="MinimumExpanding">
+		<!-- horstretch>0</horstretch -->
+		<!-- verstretch>0</verstretch -->
+	      </sizepolicy>
+	    </property>
+	    <property name="minimumSize">
+	      <size>
+		<width>800</width>
+		<height>800</height>
+	      </size>
+	    </property>
+	  </widget> <!-- "glWidget" -->
+	</item>
+
+	<item>
+	  <widget class="WrlToolsWidget" name="toolsWidget">
+	    <property name="sizePolicy">
+	      <sizepolicy hsizetype="Fixed" vsizetype="MinimumExpanding">
+		<!-- horstretch>0</horstretch -->
+		<!-- verstretch>0</verstretch -->
+	      </sizepolicy>
+	    </property>
+	    <property name="minimumSize">
+	      <size>
+		<width>200</width>
+		<height>49</height>
+	      </size>
+	    </property>
+	    <property name="maximumSize">
+	      <size>
+		<width>400</width>
+		<height>10000</height>
+	      </size>
+	    </property>
+	  </widget> <!-- "toolsWidget" -->
+	</item>
+
+      </layout> <!-- "centralWidgetQHBoxLayout" -->
+
+    </widget> <!-- name="centralwidget" -->
+
+    <widget class="QMenuBar" name="menubar">
+      <property name="geometry">
+	<rect>
+	  <x>0</x>
+	  <y>0</y>
+	  <width>1000</width>
+	  <height>22</height>
+	</rect>
+      </property> <!-- "geometry" -->
+
+      <widget class="QMenu" name="fileMenu">
+	<property name="title">
+	  <string>File</string>
+	</property>
+	<addaction name="fileExitAction"/>
+	<addaction name="fileLoadAction"/>
+	<addaction name="fileSaveAction"/>
+      </widget>
+      <addaction name="fileMenu"/>
+
+      <widget class="QMenu" name="toolsMenu">
+	<property name="title">
+	  <string>Tools</string>
+	</property>
+	<addaction name="toolsShowAction"/>
+	<addaction name="toolsHideAction"/>
+      </widget>
+      <addaction name="toolsMenu"/>
+
+      <widget class="QMenu" name="helpMenu">
+	<property name="title">
+	  <string>Help</string>
+	</property>
+	<addaction name="helpAboutAction"/>
+      </widget> <!-- "helpMenu" -->
+      <addaction name="helpMenu"/>
+
+    </widget> <!-- "menubar" -->
+
+    <action name="fileExitAction">
+      <property name="text">
+	<string>Exit</string>
+      </property>
+    </action>
+
+    <action name="fileLoadAction">
+      <property name="text">
+	<string>Load</string>
+      </property>
+    </action>
+
+    <action name="fileSaveAction">
+      <property name="text">
+	<string>Save</string>
+      </property>
+    </action>
+
+    <action name="toolsHideAction">
+      <property name="text">
+	<string>Hide</string>
+      </property>
+    </action>
+
+    <action name="toolsShowAction">
+      <property name="text">
+	<string>Show</string>
+      </property>
+    </action>
+
+    <action name="helpAboutAction">
+      <property name="text">
+	<string>About ...</string>
+      </property>
+    </action>
+ 
+  </widget> <!-- "WrlMainWindow" -->
+
+  <customwidgets>
+    <customwidget>
+      <class>WrlGLWidget</class>
+      <extends>QWidget</extends>
+      <header>WrlGLWidget.hpp</header>
+    </customwidget>
+    <customwidget>
+      <class>WrlToolsWidget</class>
+      <extends>QWidget</extends>
+      <header>WrlToolsWidget.hpp</header>
+    </customwidget>
+  </customwidgets>
+
+  <resources/>
+  <connections/>
+</ui>

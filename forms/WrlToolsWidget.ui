@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+  <class>WrlToolsWidget</class>
+  <widget class="QWidget" name="WrlToolsWidget">
+
+    <layout class="QVBoxLayout" name="toolsVBoxLayout">
+      <property name="leftMargin">
+	<number>0</number>
+      </property>
+      <property name="topMargin">
+	<number>0</number>
+      </property>
+      <property name="rightMargin">
+	<number>0</number>
+      </property>
+      <property name="bottomMargin">
+	<number>0</number>
+      </property>
+      <property name="spacing">
+	<number>0</number>
+      </property>
+
+      <item>
+	<layout class="QGridLayout" name="toolsGridLayout">
+	  <property name="leftMargin">
+	    <number>0</number>
+	  </property>
+	  <property name="topMargin">
+	    <number>0</number>
+	  </property>
+	  <property name="rightMargin">
+	    <number>0</number>
+	  </property>
+	  <property name="bottomMargin">
+	    <number>0</number>
+	  </property>
+	  <property name="spacing">
+	    <number>5</number>
+	  </property>
+
+	  <!-- row 0 -->
+	  <item row="0" column="0" colspan="4">
+	    <widget class="QLabel" name="label3DCanvas">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>3D CANVAS SIZE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 1 -->
+
+	  <item row="1" column="0">
+	    <widget class="QLabel" name="label3DCanvasWidth">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="text">
+		<string>WIDTH</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="1" column="1">
+	    <widget class="QLineEdit" name="edit3DCanvasWidth">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="1" column="2">
+	    <widget class="QLabel" name="label3DCanvasHeight">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>HEIGHT</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="1" column="3">
+	    <widget class="QLineEdit" name="edit3DCanvasHeight">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 2 -->
+
+	  <item row="2" column="0" colspan="4">
+	    <widget class="QLabel" name="labelBBox">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>BBOX</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 3 -->
+
+	  <item row="3" column="0">
+	    <widget class="QLabel" name="labelBBoxSize">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>SIZE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="3" column="1">
+	    <widget class="QSpinBox" name="spinBoxBBoxDepth">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="minimum">
+		<number>0</number>
+	      </property>
+	      <property name="maximum">
+		<number>10</number>
+	      </property>
+	      <property name="value">
+		<number>0</number>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="3" column="2">
+	    <widget class="QPushButton" name="pushButtonBBoxAdd">
+	      <property name="text">
+		<string>ADD</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="3" column="3">
+	    <widget class="QPushButton" name="pushButtonBBoxRemove">
+	      <property name="text">
+		<string>REMOVE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 4 -->
+
+	  <item row="4" column="0">
+	    <widget class="QLabel" name="labelBBoxScale">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>SCALE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+	  
+	  <item row="4" column="1">
+	    <widget class="QLineEdit" name="editBBoxScale">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>false</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="4" column="2">
+	    <widget class="QCheckBox" name="checkBoxBBoxCube">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="checked">
+		<bool>true</bool>
+	      </property>
+	      <property name="text">
+		<string>CUBE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 5 -->
+
+	  <item row="5" column="0" colspan="4">
+	    <widget class="QLabel" name="labelSceneGraph">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>SCENE GRAPH</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 6 -->
+
+	  <item row="6" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSceneGraphNormalBinding">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>NORMALS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="6" column="2">
+	    <widget class="QPushButton" name="pushButtonSceneGraphNormalInvert">
+	      <property name="text">
+		<string>INVERT</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="6" column="3">
+	    <widget class="QPushButton" name="pushButtonSceneGraphNormalNone">
+	      <property name="text">
+		<string>REMOVE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 7 -->
+
+	  <item row="7" column="1">
+	    <widget class="QPushButton" name="pushButtonSceneGraphNormalPerVertex">
+	      <property name="text">
+		<string>PER VERTEX</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="7" column="2">
+	    <widget class="QPushButton" name="pushButtonSceneGraphNormalPerFace">
+	      <property name="text">
+		<string>PER FACE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="7" column="3">
+	    <widget class="QPushButton" name="pushButtonSceneGraphNormalPerCorner">
+	      <property name="text">
+		<string>PER CORNER</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 8 -->
+
+	  <item row="8" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSceneGraphEdges">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>EDGES</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="8" column="2">
+	    <widget class="QPushButton" name="pushButtonSceneGraphEdgesAdd">
+	      <property name="text">
+		<string>ADD</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="8" column="3">
+	    <widget class="QPushButton" name="pushButtonSceneGraphEdgesRemove">
+	      <property name="text">
+		<string>REMOVE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 9 -->
+
+	  <item row="9" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSceneIndexedFaceSets">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>INDEXED FACE SETS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="9" column="2">
+	    <widget class="QPushButton"
+		    name="pushButtonSceneGraphIndexedFaceSetsShow">
+	      <property name="text">
+		<string>SHOW</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="9" column="3">
+	    <widget class="QPushButton"
+		    name="pushButtonSceneGraphIndexedFaceSetsHide">
+	      <property name="text">
+		<string>HIDE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 10 -->
+
+	  <item row="10" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSceneIndexedLineSets">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>INDEXED LINE SETS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="10" column="2">
+	    <widget class="QPushButton"
+		    name="pushButtonSceneGraphIndexedLineSetsShow">
+	      <property name="text">
+		<string>SHOW</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="10" column="3">
+	    <widget class="QPushButton"
+		    name="pushButtonSceneGraphIndexedLineSetsHide">
+	      <property name="text">
+		<string>HIDE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 11 -->
+	  <item row="11" column="0" colspan="4">
+	    <widget class="QLabel" name="labelPoints">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>POINTS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 12 -->
+
+	  <item row="12" column="0">
+	    <widget class="QLineEdit" name="editPointsNumber">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="12" column="1">
+	    <widget class="QLabel" name="labelPointsHas">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignRight|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>HAS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="12" column="2">
+	    <widget class="QCheckBox" name="checkBoxPointsHasNormals">
+	      <property name="text">
+		<string>NORMALS</string>
+	      </property>
+	      <property name="checkable">
+		<bool>false</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="12" column="3">
+	    <widget class="QCheckBox" name="checkBoxPointsHasColors">
+	      <property name="text">
+		<string>COLORS</string>
+	      </property>
+	      <property name="checkable">
+		<bool>false</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 13 -->
+
+	  <item row="13" column="1">
+	    <widget class="QPushButton" name="pushButtonPointsRemove">
+	      <property name="text">
+		<string>REMOVE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="13" column="2">
+	    <widget class="QPushButton" name="pushButtonPointsShow">
+	      <property name="text">
+		<string>SHOW</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="13" column="3">
+	    <widget class="QPushButton" name="pushButtonPointsHide">
+	      <property name="text">
+		<string>HIDE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 14 -->
+
+	  <item row="14" column="0" colspan="4">
+	    <widget class="QLabel" name="labelReconstruction">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>RECONSTRUCION</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 15 -->
+
+	  <item row="15" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSurfaceSinglePlane">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>SINGLE PLANE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="15" column="3">
+	    <widget class="QPushButton" name="pushButtonSurfaceSinglePlaneFit">
+	      <property name="text">
+		<string>FIT</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 16 -->
+
+	  <item row="16" column="0">
+	    <widget class="QLineEdit" name="editSurfaceSinglePlaneCoefficient0">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="16" column="1">
+	    <widget class="QLineEdit" name="editSurfaceSinglePlaneCoefficient1">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="16" column="2">
+	    <widget class="QLineEdit" name="editSurfaceSinglePlaneCoefficient2">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="16" column="3">
+	    <widget class="QLineEdit" name="editSurfaceSinglePlaneCoefficient3">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 17 -->
+
+	  <item row="17" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSurfaceMultiplePlanes">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>MULTIPLE PLANES</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="17" column="3">
+	    <widget class="QPushButton" name="pushButtonSurfaceMultiplePlanesFit">
+	      <property name="text">
+		<string>FIT</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 18 -->
+
+	  <item row="18" column="0" colspan="2">
+	    <widget class="QLabel" name="labelSurfaceContinuous">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>CONTINUOUS</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="18" column="3">
+	    <widget class="QPushButton" name="pushButtonSurfaceContinuousFit">
+	      <property name="text">
+		<string>FIT</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+	  
+	  <!-- row 19 -->
+
+	  <item row="19" column="0" colspan="4">
+	    <widget class="QLabel" name="labelSurface">
+	      <property name="sizePolicy">
+		<sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+		  <horstretch>1</horstretch>
+		  <verstretch>0</verstretch>
+		</sizepolicy>
+	      </property>
+	      <property name="minimumSize">
+		<size>
+		  <width>50</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="maximumSize">
+		<size>
+		  <width>10000</width>
+		  <height>22</height>
+		</size>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignHCenter|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="styleSheet">
+		<string notr="true">QLabel { background-color : rgb(200,200,200); color : black; }</string>
+	      </property>
+	      <property name="text">
+		<string>SURFACE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 20 -->
+
+	  <item row="20" column="0">
+	    <widget class="QLabel" name="labelSurfaceVertices">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>VERTICES</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="20" column="1">
+	    <widget class="QLineEdit" name="editSurfaceVertices">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="20" column="2">
+	    <widget class="QLabel" name="labelSurfaceFaces">
+	      <property name="margin">
+		<number>5</number>
+	      </property>
+	      <property name="alignment">
+		<set>Qt::AlignLeft|Qt::AlignVCenter</set>
+	      </property>
+	      <property name="text">
+		<string>FACES</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="20" column="3">
+	    <widget class="QLineEdit" name="editSurfaceFaces">
+	      <property name="text">
+		<string/>
+	      </property>
+	      <property name="readOnly">
+		<bool>true</bool>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <!-- row 21 -->
+
+	  <item row="21" column="1">
+	    <widget class="QPushButton" name="pushButtonSurfaceRemove">
+	      <property name="text">
+		<string>REMOVE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="21" column="2">
+	    <widget class="QPushButton" name="pushButtonSurfaceShow">
+	      <property name="text">
+		<string>SHOW</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	  <item row="21" column="3">
+	    <widget class="QPushButton" name="pushButtonSurfaceHide">
+	      <property name="text">
+		<string>HIDE</string>
+	      </property>
+	      <property name="font">
+		<font>
+		  <pointsize>10</pointsize>
+		</font>
+	      </property>
+	    </widget>
+	  </item>
+
+	</layout> <!-- "toolsGridLayout" -->
+      </item>
+
+      <item>
+	<spacer name="toolsVerticalSpacer">
+	  <property name="orientation">
+	    <enum>Qt::Vertical</enum>
+	  </property>
+	  <property name="sizeHint" stdset="0">
+	    <size>
+	      <width>200</width>
+	      <height>200</height>
+	    </size>
+	  </property>
+	</spacer>
+      </item>
+
+    </layout> <!-- "toolsVBoxLayout" -->
+
+  </widget> <!-- "toolsWidget" -->
+
+  <resources/>
+  <connections/>
+</ui>
